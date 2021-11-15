@@ -8,9 +8,8 @@
 #' @export
 #' @return Retourne un vecteur de gradient
 #'
-gradient <-
 function(x, y, theta) {
-  sig = sigmoid(x%*%t(theta))
-  gradient <- ((1 / nrow(y)) * (t(x) %*% (sig) - y))
-return(t(gradient))
+  sig <- sigmoid(x%*%theta)
+  gradient <- ((1 / nrow(y)) * (t(x) %*% (y-sig))
+return(gradient)
 }
