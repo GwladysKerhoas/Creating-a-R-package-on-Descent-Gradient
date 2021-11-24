@@ -10,7 +10,7 @@
 #' @return
 #' @export
 #' @examples
-#' CostFunction(x,y,coef)
+#' cout(x,y,coef)
 cout = function(x,y,theta){
   sig <- sigmoid(x%*%theta)
   cost = mean((-y*log(sig))-((1-y)*log(1-sig)))
