@@ -11,7 +11,7 @@
 #' @export
 #' @examples
 #' CostFunction(x,y,coef)
-CostFunction = function(x,y,theta){
+cout = function(x,y,theta){
   sig <- sigmoid(x%*%theta)
   cost = mean((-y*log(sig))-((1-y)*log(1-sig)))
   #print(cost)
