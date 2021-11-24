@@ -1,12 +1,16 @@
 #' CostFunction
 #'
+#' A loss function is a method of evaluating how well your algorithm models your datasets
+#' If they're pretty good, it will output a lower number
 #'
-#' @param x matrice des variables explicatives
-#' @param y variable cible à prédire 
-#' @param theta coefficient de la regression logistique
+#' @param x Matrix of explanatory variables to predict
+#' @param y Target Variable Matrix
+#' @param theta Coefficient matrix for logistic regression
 #'
+#' @return
 #' @export
-#' @return 
+#' @examples
+#' CostFunction(x,y,coef)
 CostFunction = function(x,y,theta){
   sig <- sigmoid(x%*%theta)
   cost = mean((-y*log(sig))-((1-y)*log(1-sig)))
