@@ -30,7 +30,14 @@ Default of credit card clients :
 
     
 Demonstration
-----------------------   
+----------------------  
+
+
+Load your dataset
+----------------------  
+First, load your dataset on R like the example below.
+    library(readxl)
+    data <- read_excel("/Users/.../breast.xlsx")
 
 
 Fit function
