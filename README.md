@@ -52,7 +52,7 @@ Then, call the fit function and store the function call in an object variable.
 
     LogisticRegression <- fit(formula=classe~.,data=data,coef=0.5,mode="online",batch_size=1,learningrate=0.1,max_iter=100)
 
-The function returns an object of TYPE S3 as output. To see the object, print or summarize it like this :
+The function returns an object of type S3 as output. To see the object, print or summarize it like this :
 
     print(LogisticRegression)
     summary(LogisticRegression)
