@@ -18,8 +18,10 @@ How to understand the expectations of the function parameters
 You can juste use the fonction help(function name) to see all the documentation about your function.
 
     help("fit")
+   
+----------------------  
     
-Short Descriptions of datasets
+Short descriptions of datasets
 ----------------------   
 
 Breast Cancer :
@@ -63,6 +65,7 @@ Predict function
 The second function of the package is the predict function.
 
 
+----------------------  
 
 Let’s practice on your own dataset
 ----------------------  
