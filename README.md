@@ -33,7 +33,7 @@ Demonstration
 ----------------------  
 
 
- Load your dataset
+Load your dataset
 ----------------------  
 First, load your dataset on R like the example below.
     
