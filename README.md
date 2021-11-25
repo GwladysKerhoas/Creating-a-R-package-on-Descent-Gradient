@@ -11,11 +11,27 @@ Installing the package
 
     devtools::install_github("FD155/ProjetR")
     
-    library(ClustersAnalysis)
+    library(ProjetR)
+    
+How to access to help
+----------------------   
+You can juste use the fonction help(function name) to see all the documentation about your function.
+
+    help("fit")
+    
+Short Descriptions of datasets
+----------------------   
+
+
     
 Demonstration
 ----------------------    
 
+Let’s practice on your own dataset
+----------------------  
+Now that you have seen how the package works, it is up to you to use it on your own data. Remember to use the help() function to access all documentation.
 
+Authors
+----------------------  
 
 Authors : Franck Doronzo, Candice Rajaonarivony, Gwladys Kerhoas
