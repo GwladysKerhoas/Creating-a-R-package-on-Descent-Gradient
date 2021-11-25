@@ -13,7 +13,7 @@ Installing the package and access to the library
     
     library(ProjetR)
     
-How to access to help
+How to understand the expectations of the function parameters
 ----------------------   
 You can juste use the fonction help(function name) to see all the documentation about your function.
 
@@ -33,7 +33,7 @@ Demonstration
 ----------------------  
 
 
-Load your dataset
+    Load your dataset
 ----------------------  
 First, load your dataset on R like the example below.
     
