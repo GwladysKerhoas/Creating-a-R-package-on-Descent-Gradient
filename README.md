@@ -3,7 +3,7 @@
 The purpose of the ProjetR package is to make a binary logistic regression with the use of the stochastic gradient descent algorithm.
 Next is a demonstration of how to use the R package.
 
-Installing the package
+Installing the package and access to the library
 ----------------------
     
     install.packages("devtools")
@@ -22,10 +22,27 @@ You can juste use the fonction help(function name) to see all the documentation 
 Short Descriptions of datasets
 ----------------------   
 
+Breast Cancer :
+
+
+Default of credit card clients :
+
 
     
 Demonstration
-----------------------    
+----------------------   
+
+
+Fit function
+----------------------   
+
+
+
+Predict function
+----------------------   
+
+
+
 
 Let’s practice on your own dataset
 ----------------------  
