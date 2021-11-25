@@ -36,6 +36,7 @@ Demonstration
 Load your dataset
 ----------------------  
 First, load your dataset on R like the example below.
+    
     library(readxl)
     data <- read_excel("/Users/.../breast.xlsx")
 
@@ -44,7 +45,15 @@ Fit function
 ----------------------   
 The first function you have to call is the fit function which correspond to the implementation of binary logistic regression with stochastic gradient descent. The possibility of exploiting the capacities of multicore processors is available for the batch mode of the gradient descent. To detect the number of cores you have access on your computer, use this code :
 
+    library(parallel)
     detectCores()
+    
+Then, call the fit function and store the function call in an object variable.
+    LogisticRegression <- fit(formula=classe~.,data=data,coef=0.5,mode="online",batch_size=1,learningrate=0.1,max_iter=100)
+
+The function returns an object of TYPE S3 as output. To see the object, print or summarize it like this :
+    print(LogisticRegression)
+    summary(LogisticRegression)
 
 
 Predict function
