@@ -65,7 +65,10 @@ Then, call the fit function and store the function call in an object variable.
     
 You must obtain a graphic like this one which show you the loss function according to the number of epochs.
 
-The function returns an object of type S3 as output. To see the object, print or summarize it like this :
+<img width="648" alt="Capture d’écran 2021-11-26 à 20 10 16" src="https://user-images.githubusercontent.com/73121667/143622527-1f828441-f0f8-4031-81a5-7ee5a4505372.png">
+
+
+To see the gradient descent, print or summarize it like this :
 
     print(LogisticRegression)
     summary(LogisticRegression)
