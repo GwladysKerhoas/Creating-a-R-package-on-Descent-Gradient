@@ -46,7 +46,7 @@ Demonstration
 
 Load your dataset
 ----------------------  
-First, load your dataset on R like the example below.
+First, load your dataset on R like the example below. We begin with the shortest dataset, breast cancer.
     
     library(readxl)
     data <- read_excel("/Users/.../breast.xlsx")
@@ -59,11 +59,11 @@ To use the GradDesc R package, the first function you have to call is the fit fu
     library(parallel)
     detectCores()
     
-Then, call the fit function and store the function call in an object variable.
+Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. The example below show you how to use the fit function.
 
     LogisticRegression <- fit(formula=classe~.,data=data,coef=0.5,mode="batch",batch_size=0,learningrate=0.1,max_iter=100)
     
-You must obtain a graphic like this one which show you the loss function according to the number of epochs.
+You must obtain a graphic like this one which show you the loss function according to the number of epochs. Here, we chose the mode "batch" of the gradient descent with a number of iteration fixed at 100.
 
 <img width="648" alt="Capture d’écran 2021-11-26 à 20 10 16" src="https://user-images.githubusercontent.com/73121667/143622527-1f828441-f0f8-4031-81a5-7ee5a4505372.png">
 
