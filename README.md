@@ -24,7 +24,7 @@ You can just use the fonction help(function name) to see all the documentation a
 Short descriptions of datasets
 ----------------------   
 
-Breast Cancer : 
+## Breast Cancer : 
 
 This first dataset is about breast cancer diagnostic. Features are computed from a digitized image of a breast mass. The dataset contain 699 observations and 10 columns. The target variable is the class with two modalities : malignant cancer or begnin cancer. 
 
