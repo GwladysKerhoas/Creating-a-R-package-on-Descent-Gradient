@@ -59,7 +59,18 @@ To use the GradDesc R package, the first function you have to call is the fit fu
     library(parallel)
     detectCores()
     
-Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. The example below show you how to use the fit function.
+Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. 
+
+The gradient descent has three mode : the batch, mini-batch and online mode. Here, is a explanation of these in order to inform you which is the mode you want to apply.
+
+#### Batch mode : 
+
+#### Mini-batch mode : 
+
+#### Online mode : 
+
+
+The example below show you how to use the fit function.
 
     LogisticRegression <- fit(formula=classe~.,data=data,coef=0.5,mode="batch",batch_size=0,learningrate=0.1,max_iter=100)
     
@@ -74,6 +85,8 @@ To see the gradient descent, print or summarize it like this :
     summary(LogisticRegression)
 
 The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs, the gradient descent use to converges to the final coefficients. You have access to these final coefficients and the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
+
+Now, let's see how the gradient descent behaves when using several ncores.
 
 
 Predict function
