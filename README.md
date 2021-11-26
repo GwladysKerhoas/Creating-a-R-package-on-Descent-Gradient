@@ -1,7 +1,7 @@
-# ProjetR
+# GradDesc
 
-The purpose of the ProjetR package is to make a binary logistic regression with the use of the stochastic gradient descent algorithm.
-Next is a demonstration of how to use the R package.
+This is a user manual of using the R package GradDesc. The purpose of the GradDesc package is to make a binary logistic regression with the use of the stochastic gradient descent algorithm. It works on every dataset but the exploratory variables have to be quantitative and the target variable has to be binary.
+In this demonstration, we are going to use two differents datasets : “breast_cancer” and "default_of_credit_card_clients" from UCI dataset to see how the algorithm behaves by exploiting the capacities of multicore processors.
 
 Installing the package and access to the library
 ----------------------
@@ -9,13 +9,13 @@ Installing the package and access to the library
     install.packages("devtools")
     library(devtools)
 
-    devtools::install_github("FD155/ProjetR")
+    devtools::install_github("FD155/GradDesc")
     
-    library(ProjetR)
+    library(GradDesc)
     
 How to understand the expectations of the function parameters
 ----------------------   
-You can juste use the fonction help(function name) to see all the documentation about your function.
+You can just use the fonction help(function name) to see all the documentation about your function.
 
     help("fit")
    
@@ -25,6 +25,9 @@ Short descriptions of datasets
 ----------------------   
 
 Breast Cancer :
+
+<img width="620" alt="Capture d’écran 2021-11-26 à 19 31 11" src="https://user-images.githubusercontent.com/73121667/143619934-0c3f828b-8c78-44bc-b141-85016d5d4bb0.png">
+
 
 
 Default of credit card clients :
