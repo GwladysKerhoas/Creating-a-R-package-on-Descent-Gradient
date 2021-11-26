@@ -13,7 +13,7 @@
 #' cout(x,y,coef)
 cout = function(x,y,theta){
   sig <- sigmoid(x%*%theta)
-  cost = mean((-y*log(sig))-((1-y)*log(1-sig)))
+  cost = (1 / nrow(y)) * sum((-y * log(sig)) - ((1 - y) * log(1 - sig)))
   #print(cost)
   return (cost)
 }
