@@ -89,6 +89,10 @@ The print call inform you which modality the algorithm takes as the positive mod
 Now, let's see how the gradient descent behaves when using several ncores.
 
 
+
+Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors.
+
+
 Predict function
 ----------------------   
 The second function of the package is the predict function.
