@@ -176,7 +176,7 @@ fit <- function(formula, data, mode, batch_size, ncores=0,coef,max_iter=100,lear
     parallel::stopCluster(clust)
   }
   instance$cible = cible
-  instance$index = colnames(data)
+  instance$index = colnames(data[,2:(ncol(data))])
   instance$formula = modele
   instance$coefficients = coef
   instance$loss_history = loss_history
