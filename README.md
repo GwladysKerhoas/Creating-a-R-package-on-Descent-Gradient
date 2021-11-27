@@ -143,6 +143,13 @@ Predict function
 ----------------------   
 The second function of the package is the predict function. Use it like the example below.
 
+    table(Y_Test,prediction)
+
+<img width="217" alt="Capture d’écran 2021-11-27 à 16 17 25" src="https://user-images.githubusercontent.com/73121667/143687051-385f46f5-e4f0-4078-a91c-9ff917ceb903.png">
+
+    prop.table(table(Y_Test,prediction))
+
+<img width="249" alt="Capture d’écran 2021-11-27 à 16 17 48" src="https://user-images.githubusercontent.com/73121667/143687056-1391128b-4fe9-464b-a09f-7d89ddf3708b.png">
 
 
 
