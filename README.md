@@ -6,12 +6,15 @@ In this demonstration, we are going to use two differents datasets : “breast_c
 Installing the package and access to the library
 ----------------------
     
+Once the package is installed, the library can be load using the standard commands from R.
+
     install.packages("devtools")
     library(devtools)
 
     devtools::install_github("FD155/GradDesc")
     
     library(GradDesc)
+    
     
 How to understand the expectations of the function parameters
 ----------------------   
@@ -46,7 +49,11 @@ Demonstration
 
 Load your dataset
 ----------------------  
-First, load your dataset on R like the example below. We begin with the shortest dataset, breast cancer.
+First, load your dataset on R like the example below. We begin with the shortest dataset, breast cancer. This dataset is included in the GradDesc package.
+
+    breast_cancer <- ProjetR::breast
+ 
+If you want to import another dataset, use the code below.
     
     library(readxl)
     data <- read_excel("/Users/.../breast.xlsx")
