@@ -11,7 +11,7 @@ print.fit <- function(objet){
 # Définition of our summary method
 summary.fit <- function(objet){
   # Improved display
-  cat("Call ", objet$formula, "\n", "\n")
+  cat("Call ",Reduce(paste, deparse(objet$formula)),"\n")
   cat("Coefficients : ", "\n", objet$coef, "\n", "\n")
   cat("Number of iterations : ", "\n", objet$nb_iter_while, "\n")
 }
