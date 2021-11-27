@@ -104,9 +104,18 @@ If you want to use more multicore processors, remember to see the number of core
 
 <img width="646" alt="Capture d’écran 2021-11-27 à 12 17 40" src="https://user-images.githubusercontent.com/73121667/143679002-d1bff5d7-96af-43cc-a12f-7ce53a6bcd47.png">
 
-Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors. That's why, we use the second dataset of the R package. 
+Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors. That's why, we use the second dataset of the R package.
+We compare the batch mode with 1 ncore and then 3 ncores.
 
+    LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=1)
 
+<img width="730" alt="Capture d’écran 2021-11-27 à 12 28 05" src="https://user-images.githubusercontent.com/73121667/143679280-7491640a-1c82-4417-bc64-dfa6aaf64f0c.png">
+
+    LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=3)
+    
+<img width="732" alt="Capture d’écran 2021-11-27 à 12 30 00" src="https://user-images.githubusercontent.com/73121667/143679331-51e5ad02-6878-4df0-8abe-020e7a8ce200.png">
+
+The result is clear, the gradient descent is achieved faster when using the capacity of multicore processors.
 
 
 Predict function
