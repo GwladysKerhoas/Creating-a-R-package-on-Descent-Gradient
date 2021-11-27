@@ -96,6 +96,7 @@ To see the gradient descent, print or summarize it like this :
 
 The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs, the gradient descent use to converges to the final coefficients. You have access to these final coefficients and the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
 
+
 Now, let's see how the gradient descent behaves when using several ncores. Here, we chose to use 2 ncores on the fit function. 
 
     LogisticRegression <- fit(formula=classe~.,data=breast_cancer,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=2)
@@ -104,8 +105,8 @@ If you want to use more multicore processors, remember to see the number of core
 
 <img width="646" alt="Capture d’écran 2021-11-27 à 12 17 40" src="https://user-images.githubusercontent.com/73121667/143679002-d1bff5d7-96af-43cc-a12f-7ce53a6bcd47.png">
 
-Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors. That's why, we use the second dataset of the R package.
-We compare the batch mode with 1 ncore and then 3 ncores.
+Now, you understand how to apply the fit function. Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors. That's why, we use the second dataset of the R package.
+We compare the batch mode with 1 ncore and then 3 ncores on the batch mode.
 
     LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=1)
 
@@ -116,6 +117,15 @@ We compare the batch mode with 1 ncore and then 3 ncores.
 <img width="732" alt="Capture d’écran 2021-11-27 à 12 30 00" src="https://user-images.githubusercontent.com/73121667/143679331-51e5ad02-6878-4df0-8abe-020e7a8ce200.png">
 
 The result is clear, the gradient descent is achieved faster when using the capacity of multicore processors.
+
+
+If you want to use the other mode of the gradient descent, here are some examples and output you can have. The exploitation of the capacities of multicore processors are not available on the mini-batch and online mode.
+
+    LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="mini-batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=0)
+
+<img width="728" alt="Capture d’écran 2021-11-27 à 12 36 04" src="https://user-images.githubusercontent.com/73121667/143679589-12a3f36b-3bb3-4743-b118-1e44f9af5e7e.png">
+
+    LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="online",batch_size=1,learningrate=0.1,max_iter=100, ncores=0)
 
 
 Predict function
