@@ -156,8 +156,8 @@ The second function of the package is the predict function. Use it like the exam
     
     
     print(system.time(LogisticRegression <- fit(formula=classe~.,data=data_TRAIN,coef=0.5,mode="batch",batch_size=1,learningrate=0.1,max_iter=100, ncores=0)))
-print(LogisticRegression)
-summary(LogisticRegression)
+    print(LogisticRegression)
+    summary(LogisticRegression)
 
     pred = predict(LogisticRegression,X_Test,type = "class")
     prediction = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
