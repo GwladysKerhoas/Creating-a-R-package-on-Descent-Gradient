@@ -112,19 +112,19 @@ We compare the batch mode with 1 ncore and then 3 ncores on the batch mode. To s
 
 <img width="730" alt="Capture d’écran 2021-11-27 à 12 28 05" src="https://user-images.githubusercontent.com/73121667/143679280-7491640a-1c82-4417-bc64-dfa6aaf64f0c.png">
 
-With one ncore, the time of the algorithm is about 
+With one ncore, the time of the algorithm is about 23 seconds.
 
 <img width="269" alt="Capture d’écran 2021-11-27 à 16 02 36" src="https://user-images.githubusercontent.com/73121667/143686670-e5b19de0-f9d1-4d52-88e2-2c27c3842aef.png">
 
 
     LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=3)
-    
-<img width="260" alt="Capture d’écran 2021-11-27 à 16 03 11" src="https://user-images.githubusercontent.com/73121667/143686716-4b2deab0-44d6-49b9-9239-723f6c60e633.png">
 
     
 <img width="732" alt="Capture d’écran 2021-11-27 à 12 30 00" src="https://user-images.githubusercontent.com/73121667/143679331-51e5ad02-6878-4df0-8abe-020e7a8ce200.png">
 
-The result is clear, the gradient descent is achieved faster when using the capacity of multicore processors.
+<img width="260" alt="Capture d’écran 2021-11-27 à 16 03 11" src="https://user-images.githubusercontent.com/73121667/143686716-4b2deab0-44d6-49b9-9239-723f6c60e633.png">
+
+With three ncores, the time of the algorithm is now about 14 seconds. The result is clear, the gradient descent is achieved faster when using the capacity of multicore processors.
 
 
 If you want to use the other mode of the gradient descent, here are some examples and output you can have. The exploitation of the capacities of multicore processors are not available on the mini-batch and online mode.
