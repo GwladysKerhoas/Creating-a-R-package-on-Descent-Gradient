@@ -126,6 +126,9 @@ If you want to use the other mode of the gradient descent, here are some example
 <img width="728" alt="Capture d’écran 2021-11-27 à 12 36 04" src="https://user-images.githubusercontent.com/73121667/143679589-12a3f36b-3bb3-4743-b118-1e44f9af5e7e.png">
 
     LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="online",batch_size=1,learningrate=0.1,max_iter=100, ncores=0)
+    
+<img width="677" alt="Capture d’écran 2021-11-27 à 15 02 59" src="https://user-images.githubusercontent.com/73121667/143684711-1083c9c7-b720-416d-a674-8c608c4bcc32.png">
+
 
 
 Predict function
