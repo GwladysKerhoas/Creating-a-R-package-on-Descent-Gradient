@@ -13,6 +13,7 @@
 #' @param tol Tolerance threshold for which convergence is said to be "finished"
 #'
 #' @import parallel
+#' @import dplyr
 #'
 #' @return
 #' @export

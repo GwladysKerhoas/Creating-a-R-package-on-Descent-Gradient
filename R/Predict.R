@@ -6,7 +6,7 @@
 #' @param newdata dataframe explanatory variables on which to apply the prediction
 #' @param type Output type "Posterior" (For predicted classes) or "class" (for the probability of class memberships)
 #'
-#' @import plyr
+#' @import dplyr
 #'
 #' @return An instance with the probability of class memberships, or predictions
 #' @export
