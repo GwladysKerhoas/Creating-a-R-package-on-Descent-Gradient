@@ -86,7 +86,7 @@ The example below show you how to use the fit function.
     
 You must obtain a graphic like this one which show you the loss function according to the number of epochs. Here, we chose the mode "batch" of the gradient descent with a number of iteration fixed at 100.
 
-<img width="648" alt="Capture d’écran 2021-11-26 à 20 10 16" src="https://user-images.githubusercontent.com/73121667/143622527-1f828441-f0f8-4031-81a5-7ee5a4505372.png">
+<img width="649" alt="Capture d’écran 2021-11-27 à 12 19 18" src="https://user-images.githubusercontent.com/73121667/143679048-3402404e-7da2-4794-b340-3d43b52c2f28.png">
 
 
 To see the gradient descent, print or summarize it like this :
@@ -96,9 +96,9 @@ To see the gradient descent, print or summarize it like this :
 
 The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs, the gradient descent use to converges to the final coefficients. You have access to these final coefficients and the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
 
-Now, let's see how the gradient descent behaves when using several ncores.
+Now, let's see how the gradient descent behaves when using several ncores. Here, we chose to use 2 ncores on the fit function. If you want to use more multicore processors, remember to see the number of cores on your computer with the code just above.
 
-
+<img width="646" alt="Capture d’écran 2021-11-27 à 12 17 40" src="https://user-images.githubusercontent.com/73121667/143679002-d1bff5d7-96af-43cc-a12f-7ce53a6bcd47.png">
 
 Then, we use a bigger dataset to see the real utility of exploiting the capacities of multicore processors. That's why, we use the second dataset of the R package. 
 
