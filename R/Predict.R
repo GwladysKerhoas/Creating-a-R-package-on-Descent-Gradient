@@ -6,6 +6,7 @@
 #' @param newdata dataframe explanatory variables on which to apply the prediction
 #' @param type Output type "Posterior" (For predicted classes) or "class" (for the probability of class memberships)
 #'
+#' @import plyr
 #'
 #' @return An instance with the probability of class memberships, or predictions
 #' @export
@@ -18,7 +19,7 @@ predict = function(objet, newdata ,type){
   index = objet$index
   test = index != colnames(data[,2:(ncol(data))])
   if(FALSE %in% test){
-    stop("Jeu de donn?es incorrect")
+    stop("Jeu de donnees incorrect")
   }
 
   data = as.matrix(apply(data, 2, scale))
@@ -47,7 +48,7 @@ predict = function(objet, newdata ,type){
   return(instance)
 }
 
-# pred = predict(LogisticRegression,X_Test,type = "class")
+pred = predict(LogisticRegression,X_Test,type = "class")
 # Y_test2 = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
 # table(Y_Test,Y_test2)
 # prop.table(table(Y_Test,Y_test2))
