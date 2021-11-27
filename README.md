@@ -21,7 +21,7 @@ You can just use the fonction help(function name) to see all the documentation a
    
 ----------------------  
     
-Short descriptions of datasets
+Short descriptions of datasets in the package
 ----------------------   
 
 ### Breast Cancer : 
