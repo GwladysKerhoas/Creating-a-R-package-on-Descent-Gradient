@@ -1,7 +1,7 @@
 # GradDesc
 
 This is a user manual of using the R package GradDesc. The purpose of the GradDesc package is to make a binary logistic regression with the use of the stochastic gradient descent algorithm. It works on every dataset but the exploratory variables have to be quantitative and the target variable has to be binary.
-In this demonstration, we are going to use two differents datasets : “breast_cancer” and "default_of_credit_card_clients" from UCI dataset to see how the algorithm behaves by exploiting the capacities of multicore processors.
+In this demonstration, we are going to use two different datasets : “breast_cancer” and "default_of_credit_card_clients" from UCI dataset to see how the algorithm behaves by exploiting the capacities of multicore processors.
 
 Installing the package and access to the library
 ----------------------
@@ -61,7 +61,7 @@ If you want to import another dataset, use the code below.
 
 Fit function
 ----------------------   
-To use the GradDesc R package, the first function you have to call is the fit function which correspond to the implementation of binary logistic regression with stochastic gradient descent. The possibility of exploiting the capacities of multicore processors is available for the batch mode of the gradient descent. To detect the number of cores you have access on your computer, use this code :
+To use the GradDesc R package, the first function you have to call is the fit function which corresponds to the implementation of binary logistic regression with stochastic gradient descent. The possibility of exploiting the capacities of multicore processors is available for the batch mode of the gradient descent. To detect the number of cores you have access on your computer, use this code :
 
     library(parallel)
     detectCores()
