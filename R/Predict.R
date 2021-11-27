@@ -17,7 +17,7 @@ predict = function(objet, newdata ,type){
   data = newdata
   coef = objet$coefficients
   index = objet$index
-  test = index != colnames(data[,2:(ncol(data))])
+  test = index != colnames(data[,1:(ncol(data))])
   if(FALSE %in% test){
     stop("Jeu de donnees incorrect")
   }
@@ -48,7 +48,7 @@ predict = function(objet, newdata ,type){
   return(instance)
 }
 
-pred = predict(LogisticRegression,X_Test,type = "class")
+# pred = predict(LogisticRegression,X_Test,type = "class")
 # Y_test2 = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
 # table(Y_Test,Y_test2)
 # prop.table(table(Y_Test,Y_test2))

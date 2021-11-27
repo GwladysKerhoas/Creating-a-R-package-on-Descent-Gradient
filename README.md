@@ -143,6 +143,26 @@ Predict function
 ----------------------   
 The second function of the package is the predict function. Use it like the example below.
 
+    install.packages("caret")
+    library(caret) #this package has the createDataPartition function
+    
+    trainIndex <- createDataPartition(data$classe,p=0.75,list=FALSE)
+    
+    #splitting data into training/testing data using the trainIndex object
+    data_TRAIN <- data[trainIndex,] #training data (75% of data)
+    data_TEST <- data[-trainIndex,] #testing data (25% of data)
+    X_Test = data_TEST[,1:ncol(data)-1]
+    Y_Test = data_TEST[,ncol(data)]
+    
+    
+    print(system.time(LogisticRegression <- fit(formula=classe~.,data=data_TRAIN,coef=0.5,mode="batch",batch_size=1,learningrate=0.1,max_iter=100, ncores=0)))
+    print(LogisticRegression)
+    summary(LogisticRegression)
+
+    pred = predict(LogisticRegression,X_Test,type = "class")
+    prediction = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
+    Y_Test=as.matrix(Y_Test)
+
     table(Y_Test,prediction)
 
 <img width="217" alt="Capture d’écran 2021-11-27 à 16 17 25" src="https://user-images.githubusercontent.com/73121667/143687051-385f46f5-e4f0-4078-a91c-9ff917ceb903.png">
