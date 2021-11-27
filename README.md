@@ -117,7 +117,7 @@ With one ncore, the time of the algorithm is about 23 seconds.
 <img width="269" alt="Capture d’écran 2021-11-27 à 16 02 36" src="https://user-images.githubusercontent.com/73121667/143686670-e5b19de0-f9d1-4d52-88e2-2c27c3842aef.png">
 
 
-    LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=3)
+    print(system.time(LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=3)))
 
     
 <img width="732" alt="Capture d’écran 2021-11-27 à 12 30 00" src="https://user-images.githubusercontent.com/73121667/143679331-51e5ad02-6878-4df0-8abe-020e7a8ce200.png">
