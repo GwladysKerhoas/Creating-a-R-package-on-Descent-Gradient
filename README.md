@@ -68,7 +68,7 @@ To use the GradDesc R package, the first function you have to call is the fit fu
     
 Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. 
 
-The gradient descent has three mode : the batch, mini-batch and online mode. Here, is a explanation of these in order to inform you which is the mode you want to apply.
+The gradient descent has three mode : the batch, mini-batch and online mode. Here, is an explanation of these mode in order to inform you which is the mode you want to apply.
 
 #### Batch mode : 
 Batch gradient descent is a variation of the gradient descent algorithm that calculates the error for each example in the training dataset, but only updates the model after all training examples have been evaluated.
