@@ -96,7 +96,11 @@ To see the gradient descent, print or summarize it like this :
 
 The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs, the gradient descent use to converges to the final coefficients. You have access to these final coefficients and the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
 
-Now, let's see how the gradient descent behaves when using several ncores. Here, we chose to use 2 ncores on the fit function. If you want to use more multicore processors, remember to see the number of cores on your computer with the code just above.
+Now, let's see how the gradient descent behaves when using several ncores. Here, we chose to use 2 ncores on the fit function. 
+
+    LogisticRegression <- fit(formula=classe~.,data=breast_cancer,coef=0.5,mode="batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=2)
+
+If you want to use more multicore processors, remember to see the number of cores on your computer with the code just above.
 
 <img width="646" alt="Capture d’écran 2021-11-27 à 12 17 40" src="https://user-images.githubusercontent.com/73121667/143679002-d1bff5d7-96af-43cc-a12f-7ce53a6bcd47.png">
 
