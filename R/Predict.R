@@ -48,7 +48,7 @@ predict = function(objet, newdata ,type){
   return(instance)
 }
 
-pred = predict(LogisticRegression,X_Test,type = "class")
+# pred = predict(LogisticRegression,X_Test,type = "class")
 # Y_test2 = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
 # table(Y_Test,Y_test2)
 # prop.table(table(Y_Test,Y_test2))
