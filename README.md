@@ -167,29 +167,37 @@ Then, we chose to take 75% for the learning part and 25% for the test part with 
     print(LogisticRegression)
     summary(LogisticRegression)
 
-Let's take a look at some new function for the print and the summary :
+Let's take a look at some new functions for the print and the summary :
 
     print.fit(LogisticRegression)
     
 <img width="817" alt="Capture d’écran 2021-11-28 à 16 28 45" src="https://user-images.githubusercontent.com/73121667/143774599-5c701631-ae21-435c-831c-2602b2bc4443.png">
 
+In this first function, you have access to the coefficients obtained thanks to the fit function. But more important, you have the positive modality which is take by the function. Here, it's the modality "malignant" which is the positive modality but sometimes, according to the partition of the dataset, it can be the other modality which is condider as the positive modality. So, take care about this information in the print.fit function because the result depends on it.
+
     summary.fit(LogisticRegression)
   
 <img width="724" alt="Capture d’écran 2021-11-28 à 16 29 03" src="https://user-images.githubusercontent.com/73121667/143774603-3175a296-7e76-4705-aa6b-7f1df56a9e7d.png">
+
+In this second function, you can see the formula of the model.
 
     
 Call the predict function like this if you want to have the predict class for all of the observations.
 
     pred <- predict(LogisticRegression,X_Test,type = "class")
     
-
+According to the print.fit function, we consider below that the positive modality is "malignant".
     
     prediction <- as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
     Y_Test=as.matrix(Y_Test)
 
+Show the confusion matrix like this, and see the result. 
+
     table(Y_Test,prediction)
 
 <img width="217" alt="Capture d’écran 2021-11-27 à 16 17 25" src="https://user-images.githubusercontent.com/73121667/143687051-385f46f5-e4f0-4078-a91c-9ff917ceb903.png">
+
+Here, we have only 3 false predictions. The prediction are pretty good. You can also see the proportion of the confusion matrix.
 
     prop.table(table(Y_Test,prediction))
 
