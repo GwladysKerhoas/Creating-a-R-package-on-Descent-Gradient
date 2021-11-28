@@ -141,26 +141,41 @@ If you want to use the other mode of the gradient descent, here are some example
 
 Predict function
 ----------------------   
-The second function of the package is the predict function. Let's take our dataset "breast_cancer". Use it like the example below.
+The second function of the package is the predict function. Let's take our dataset "breast_cancer" and use the function like the example below.
+
+First of all, we need to partition our dataset into learning and testing data. Use the package "caret" to do it.
 
     install.packages("caret")
     library(caret) #this package has the createDataPartition function
-    
+
+Then, we chose to take 75% for the learning part and 25% for the test part with the function "createDataPartition".
+
     trainIndex <- createDataPartition(data$classe,p=0.75,list=FALSE)
-    
+ 
+ Split the breast cancer data like this :
+ 
     #splitting data into training/testing data using the trainIndex object
     data_TRAIN <- data[trainIndex,] #training data (75% of data)
     data_TEST <- data[-trainIndex,] #testing data (25% of data)
     X_Test = data_TEST[,1:ncol(data)-1]
     Y_Test = data_TEST[,ncol(data)]
     
-    
+ 
+ We use the train data as input to the fit function.
+ 
     print(system.time(LogisticRegression <- fit(formula=classe~.,data=data_TRAIN,coef=0.5,mode="batch",batch_size=1,learningrate=0.1,max_iter=100, ncores=0)))
     print(LogisticRegression)
     summary(LogisticRegression)
 
-    pred = predict(LogisticRegression,X_Test,type = "class")
-    prediction = as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
+Let's take a look at some new function for the print and the summary :
+
+    print.fit(LogisticRegression)
+    summary.fit(LogisticRegression)
+    
+
+Call the predict function like this if you want to have 
+    pred <- predict(LogisticRegression,X_Test,type = "class")
+    prediction <- as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
     Y_Test=as.matrix(Y_Test)
 
     table(Y_Test,prediction)
