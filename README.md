@@ -213,6 +213,10 @@ In order to get the percentage of correct predictions, we calculate the accuracy
 
 The accuracy is very close to 100%, signifying the strong performance of our model. 
 
+If you want to have the probability for each of the observations to belong to the class of the positive modality, chose the type "posterior" :
+
+    pred <- predict(LogisticRegression,X_Test,type = "posterior")
+
     
 
 
