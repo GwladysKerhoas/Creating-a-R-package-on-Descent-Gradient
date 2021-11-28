@@ -203,6 +203,14 @@ Here, we have only 3 false predictions. The prediction are pretty good. You can 
 
 <img width="249" alt="Capture d’écran 2021-11-27 à 16 17 48" src="https://user-images.githubusercontent.com/73121667/143687056-1391128b-4fe9-464b-a09f-7d89ddf3708b.png">
 
+In order to get the percentage of correct predictions, we calculate the accuracy.
+
+    table <- table(Y_Test,prediction)
+    accuracy <- (table[1,1] + table[2,2]) / sum(table)
+    print(accuracy)
+    
+
+
 
 
 ----------------------  
