@@ -195,19 +195,24 @@ Show the confusion matrix like this, and see the result.
 
     table(Y_Test,prediction)
 
-<img width="217" alt="Capture d’écran 2021-11-27 à 16 17 25" src="https://user-images.githubusercontent.com/73121667/143687051-385f46f5-e4f0-4078-a91c-9ff917ceb903.png">
+<img width="216" alt="Capture d’écran 2021-11-28 à 22 03 57" src="https://user-images.githubusercontent.com/73121667/143785916-76cadd6a-5fe4-468e-874f-05279fb2373e.png">
 
 Here, we have only 3 false predictions. The prediction are pretty good. You can also see the proportion of the confusion matrix.
 
     prop.table(table(Y_Test,prediction))
 
-<img width="249" alt="Capture d’écran 2021-11-27 à 16 17 48" src="https://user-images.githubusercontent.com/73121667/143687056-1391128b-4fe9-464b-a09f-7d89ddf3708b.png">
+<img width="268" alt="Capture d’écran 2021-11-28 à 22 04 12" src="https://user-images.githubusercontent.com/73121667/143785920-35b0b7cf-c27e-4f38-9846-403de7d3f41f.png">
 
 In order to get the percentage of correct predictions, we calculate the accuracy.
 
     table <- table(Y_Test,prediction)
     accuracy <- (table[1,1] + table[2,2]) / sum(table)
     print(accuracy)
+    
+<img width="133" alt="Capture d’écran 2021-11-28 à 22 03 47" src="https://user-images.githubusercontent.com/73121667/143785914-5142484d-f1ff-443f-921d-ef50efbf076d.png">
+
+The accuracy is very close to 100%, signifying the strong performance of our model. 
+
     
 
 
