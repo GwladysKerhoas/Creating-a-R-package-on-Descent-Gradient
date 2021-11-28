@@ -141,7 +141,7 @@ If you want to use the other mode of the gradient descent, here are some example
 
 Predict function
 ----------------------   
-The second function of the package is the predict function. Use it like the example below.
+The second function of the package is the predict function. Let's take our dataset "breast_cancer". Use it like the example below.
 
     install.packages("caret")
     library(caret) #this package has the createDataPartition function
