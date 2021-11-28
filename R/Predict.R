@@ -2,7 +2,7 @@
 #'
 #' prediction Binary or probabilities prediction
 #'
-#' @param objet the S3 object that the predict function returns
+#' @param objet the S3 object that the fit function returns
 #' @param newdata dataframe explanatory variables on which to apply the prediction
 #' @param type Output type "Posterior" (For predicted classes) or "class" (for the probability of class memberships)
 #'

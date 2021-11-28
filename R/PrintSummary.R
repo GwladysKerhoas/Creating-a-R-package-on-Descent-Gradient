@@ -1,4 +1,11 @@
 # Définition of our print method
+#' Print Overload
+#'
+#' @param objet the S3 object that the fit function returns
+#'
+#' @return Print all the objects of the instance
+#' @export
+#'
 print.fit <- function(objet){
   # Improved display
   cat("coef = ", objet$coef, "\n", "\n")
@@ -9,6 +16,13 @@ print.fit <- function(objet){
 
 
 # Définition of our summary method
+#' Summary Overload
+#'
+#' @param objet the S3 object that the fit function returns
+#'
+#' @return Print the trained model, the final coefficients and the number of iterations executed.
+#' @export
+#'
 summary.fit <- function(objet){
   # Improved display
   cat("Call ",Reduce(paste, deparse(objet$formula)),"\n")
