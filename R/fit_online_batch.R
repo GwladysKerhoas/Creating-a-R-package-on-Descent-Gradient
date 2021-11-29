@@ -146,8 +146,8 @@ fit <- function(formula, data, mode, batch_size, ncores=0,coef,max_iter=100,lear
 
       
       # Get the x and y batch
-      x_batch = matrix(data[i,2:ncol(data)], nrow=1, ncol=ncol(data)-1)
-      y_batch = matrix(data[i,1])
+      x_batch = matrix(data[1,2:ncol(data)], nrow=1, ncol=ncol(data)-1)
+      y_batch = matrix(data[1,1])
 
       # Loss function
       c = cout(x_batch,y_batch,coef)
