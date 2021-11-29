@@ -16,17 +16,6 @@ fit(
   tol = 1e-04
 )
 
-fit(
-  formula,
-  data,
-  mode,
-  batch_size,
-  ncores = 0,
-  coef,
-  max_iter = 100,
-  learningrate = 0.1,
-  tol = 1e-04
-)
 }
 \arguments{
 \item{formula}{Target variable ~ explanatory variables}
@@ -55,5 +44,4 @@ fit(
 \description{
 Implementation of binary logistic regression with stochastic gradient descent for algorithm
 
-Implementation of binary logistic regression with stochastic gradient descent for algorithm
 }
