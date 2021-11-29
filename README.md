@@ -147,6 +147,8 @@ Predict function
 ----------------------   
 The second function of the package is the predict function. Let's take our dataset "breast_cancer" and use the function like the example below.
 
+    data <- GradDesc::breast
+
 First of all, we need to partition our dataset into learning and testing data. Use the package "caret" to do it.
 
     install.packages("caret")
