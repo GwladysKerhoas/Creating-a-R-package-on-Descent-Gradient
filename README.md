@@ -95,7 +95,7 @@ To see the gradient descent, print or summarize it like this :
     print(LogisticRegression)
     summary(LogisticRegression)
 
-The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs, the gradient descent use to converges to the final coefficients. You have access to these final coefficients and the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
+The print call inform you which modality the algorithm takes as the positive modality. By default, it takes the modality that appears first in the dataset. This first call also show the number of epochs and the final coefficients of the gradient descent. You have access to the loss function at each iteration. The summary call also gives you the formula on which the descent gradient is based. 
 
 
 Now, let's see how the gradient descent behaves when using several ncores. Here, we chose to use 2 ncores on the fit function. 
