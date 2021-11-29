@@ -63,8 +63,7 @@ Fit function
 ----------------------   
 To use the GradDesc R package, the first function you have to call is the fit function which corresponds to the implementation of binary logistic regression with stochastic gradient descent. The possibility of exploiting the capacities of multicore processors is available for the batch mode of the gradient descent. To detect the number of cores you have access on your computer, use this code :
 
-    library(parallel)
-    detectCores()
+    parallel::detectCores()
     
 Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. 
 
