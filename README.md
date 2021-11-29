@@ -192,7 +192,7 @@ Call the predict function like this if you want to have the predict class for al
 
     pred <- predict(LogisticRegression,X_Test,type = "class")
     
-According to the print.fit function, we consider below that the positive modality is "malignant".
+According to the print function, we consider below that the positive modality is "malignant".
     
     prediction <- as.matrix(ifelse(pred$pred==1, "malignant","begnin"))
     Y_Test=as.matrix(Y_Test)
