@@ -51,7 +51,7 @@ Load your dataset
 ----------------------  
 First, load your dataset on R like the example below. We begin with the shortest dataset, breast cancer. This dataset is included in the GradDesc package.
 
-    breast_cancer <- ProjetR::breast
+    breast_cancer <- GradDesc::breast
  
 If you want to import another dataset, use the code below.
     
