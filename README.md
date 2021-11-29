@@ -75,7 +75,7 @@ The gradient descent has three mode : the batch, mini-batch and online mode. Her
 Batch gradient descent is a variation of the gradient descent algorithm that calculates the error for each example in the training dataset, but only updates the model after all training examples have been evaluated.
 
 #### Mini-batch mode : 
-We use a batch of a fixed number of training examples which is less than the actual dataset and call it a mini-batch. The fixed number is call the batchsize and you can fix it in the parameters fit function.
+We use a batch of a fixed number of training examples which is less than the actual dataset and call it a mini-batch. The fixed number is call the batchsize and you can fix it in the fit function parameters.
 
 #### Online mode : 
 In Stochastic Gradient Descent (SGD), we consider just one example at a time to take a single step. 
