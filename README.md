@@ -203,7 +203,7 @@ Show the confusion matrix like this, and see the result.
 
 <img width="216" alt="Capture d’écran 2021-11-28 à 22 03 57" src="https://user-images.githubusercontent.com/73121667/143785916-76cadd6a-5fe4-468e-874f-05279fb2373e.png">
 
-Here, we have only 3 false predictions. The prediction are pretty good. You can also see the proportion of the confusion matrix.
+Here, we have only 4 false predictions. The prediction are pretty good. You can also see the proportion of the confusion matrix.
 
     prop.table(table(Y_Test,prediction))
 
