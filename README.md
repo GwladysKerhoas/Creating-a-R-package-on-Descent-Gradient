@@ -131,7 +131,7 @@ With one ncore, the time of the algorithm is about 23 seconds.
 With three ncores, the time of the algorithm is now about 14 seconds. The result is clear, the gradient descent is achieved faster when using the capacity of multicore processors.
 
 
-If you want to use the other mode of the gradient descent, here are some examples and output you can have. The exploitation of the capacities of multicore processors are not available on the mini-batch and online mode.
+If you want to use the others mode of the gradient descent, here are some examples and output you can have. The exploitation of the capacities of multicore processors are not available on the mini-batch and online mode.
 
     LogisticRegression <- fit(formula=default~.,data=default_card,coef=0.5,mode="mini-batch",batch_size=10,learningrate=0.1,max_iter=100, ncores=0)
 
