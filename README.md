@@ -21,6 +21,9 @@ How to understand the expectations of the function parameters
 You can just use the fonction help() to see all the documentation about your package. Then, you have acces to all the functions documentation.
 
     help(package="GradDesc")
+    
+<img width="535" alt="Capture d’écran 2021-11-29 à 11 09 59" src="https://user-images.githubusercontent.com/73121667/143848637-f577c86b-7dae-4fd4-8e1c-feb5b9a4d9c9.png">
+
    
 ----------------------  
     
