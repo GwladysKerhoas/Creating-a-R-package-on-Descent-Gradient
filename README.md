@@ -179,7 +179,7 @@ Let's take a look at the print and the summary function :
     
 <img width="722" alt="Capture d’écran 2021-11-29 à 12 07 24" src="https://user-images.githubusercontent.com/73121667/143857337-cb25c213-371f-4960-a127-e2647cfd8875.png">
 
-In this first function, you have access to the coefficients obtained thanks to the fit function. But more important, you have the positive modality which is take by the function. Here, it's the modality "malignant" which is the positive modality but sometimes, according to the partition of the dataset, it can be the other modality which is condider as the positive modality. So, take care about this information in the print.fit function because the result depends on it.
+In this first function, you have access to the coefficients obtained thanks to the fit function. But more important, you have the positive modality which is take by the function. Here, it's the modality "malignant" which is the positive modality but sometimes, according to the partition of the dataset, it can be the other modality which is condider as the positive modality. So, take care about this information in the print function because the result of the confusion matrix depends on it.
 
     summary(LogisticRegression)
   
