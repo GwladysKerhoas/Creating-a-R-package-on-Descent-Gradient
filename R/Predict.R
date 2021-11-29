@@ -4,7 +4,7 @@
 #'
 #' @param objet the S3 object that the fit function returns
 #' @param newdata dataframe explanatory variables on which to apply the prediction
-#' @param type Output type "Posterior" (For predicted classes) or "class" (for the probability of class memberships)
+#' @param type Output type "class" (For predicted classes) or "posterior" (for the probability of class memberships)
 #'
 #' @import dplyr
 #'
