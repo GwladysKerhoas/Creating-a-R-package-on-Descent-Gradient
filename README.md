@@ -18,9 +18,9 @@ Once the package is installed, the library can be load using the standard comman
     
 How to understand the expectations of the function parameters
 ----------------------   
-You can just use the fonction help(function name) to see all the documentation about your function.
+You can just use the fonction help() to see all the documentation about your package. Then, you have acces to all the functions documentation.
 
-    help("fit")
+    help(package="GradDesc")
    
 ----------------------  
     
