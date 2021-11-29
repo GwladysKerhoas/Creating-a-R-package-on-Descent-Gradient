@@ -20,7 +20,7 @@ Author: c(person(given = "Franck",
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: Implementation of binary logistic regression with stochastic gradient descent for algorithm
 Depends:
-    R >= (2.10.0)
+    R >= (2.10)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
