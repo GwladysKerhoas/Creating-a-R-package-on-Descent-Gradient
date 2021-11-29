@@ -68,7 +68,6 @@ To use the GradDesc R package, the first function you have to call is the fit fu
 
     parallel::detectCores()
     
-Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. 
 
 The gradient descent has three mode : the batch, mini-batch and online mode. Here, is an explanation of these mode in order to inform you which is the mode you want to apply.
 
@@ -81,7 +80,7 @@ We use a batch of a fixed number of training examples which is less than the act
 #### Online mode : 
 In Stochastic Gradient Descent (SGD), we consider just one example at a time to take a single step. 
 
-
+Then, call the fit function and store the function call in an object variable. You have to informed the target variable and the explanatory variables in the formula parameter. 
 The example below show you how to use the fit function.
 
     LogisticRegression <- fit(formula=classe~.,data=data,coef=0.5,mode="batch",batch_size=0,learningrate=0.1,max_iter=100)
