@@ -171,7 +171,7 @@ Then, we chose to take 75% for the learning part and 25% for the test part with 
     print(LogisticRegression)
     summary(LogisticRegression)
 
-Let's take a look at some new functions for the print and the summary :
+Let's take a look at the print and the summary function :
 
     print(LogisticRegression)
     
