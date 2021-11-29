@@ -17,7 +17,6 @@
 #'
 #' @return
 #' @export
-#'
 fit <- function(formula, data, mode, batch_size, ncores=0,coef,max_iter=100,learningrate=0.1,tol=1e-4){
   if ((mode != "batch") && (mode != "mini-batch") && (mode != "online")){
     stop("mode incorrect")
