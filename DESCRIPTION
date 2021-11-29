@@ -1,13 +1,28 @@
 Package: GradDesc
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Logistic Regression 
 Version: 0.1.0
-Author: Who wrote it
+Author: c(person(given = "Franck",
+            family = "DORONZO",
+            role = c("aut","cre"),
+            email = "franck.doronzo@univ-lyon2.fr",
+            comment = c(ORCID = " ")),
+     person(given = "Gwladys",
+            family = "KERHOAS",
+            role = c("aut","cre"),
+            email = "gwladys.kerhoas@univ-lyon2.fr",
+            comment = c(ORCID = " "))
+     person(given = "Candice",
+            family = "RAJAONARIVONY",
+            role = c("aut","cre"),
+            email = "c.rajaonarivony@univ-lyon2.fr",
+            comment = c(ORCID = " "))
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Implementation of binary logistic regression with stochastic gradient descent for algorithm
+Depends:
+    R >= (2.10.0)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    R (>= 2.10)
+Imports : parallel
+RoxygenNote : 7.1.2
