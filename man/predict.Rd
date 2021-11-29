@@ -7,19 +7,18 @@
 predict(objet, newdata, type)
 }
 \arguments{
-\item{objet}{Matrix of explanatory variables to predict}
+\item{objet}{the S3 object that the fit function returns}
 
-\item{newdata}{Target Variable Matrix}
+\item{newdata}{dataframe explanatory variables on which to apply the prediction}
 
-\item{type}{Coefficient matrix for logistic regression}
+\item{type}{Output type "class" (For predicted classes) or "posterior" (for the probability of class memberships)}
 }
 \value{
 
 }
 \description{
-A loss function is a method of evaluating how well your algorithm models your datasets
-If they're pretty good, it will output a lower number
+prediction Binary or probabilities prediction
 }
-\examples{
-cout(x,y,coef)
-}
+
+
+
