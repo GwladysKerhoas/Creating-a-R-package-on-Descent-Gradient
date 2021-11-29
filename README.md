@@ -177,13 +177,13 @@ Let's take a look at the print and the summary function :
 
     print(LogisticRegression)
     
-<img width="817" alt="Capture d’écran 2021-11-28 à 16 28 45" src="https://user-images.githubusercontent.com/73121667/143774599-5c701631-ae21-435c-831c-2602b2bc4443.png">
+<img width="722" alt="Capture d’écran 2021-11-29 à 12 07 24" src="https://user-images.githubusercontent.com/73121667/143857337-cb25c213-371f-4960-a127-e2647cfd8875.png">
 
 In this first function, you have access to the coefficients obtained thanks to the fit function. But more important, you have the positive modality which is take by the function. Here, it's the modality "malignant" which is the positive modality but sometimes, according to the partition of the dataset, it can be the other modality which is condider as the positive modality. So, take care about this information in the print.fit function because the result depends on it.
 
     summary(LogisticRegression)
   
-<img width="724" alt="Capture d’écran 2021-11-28 à 16 29 03" src="https://user-images.githubusercontent.com/73121667/143774603-3175a296-7e76-4705-aa6b-7f1df56a9e7d.png">
+<img width="723" alt="Capture d’écran 2021-11-29 à 12 07 38" src="https://user-images.githubusercontent.com/73121667/143857370-47da313c-4507-4b6a-90b3-253a3bb5d5a8.png">
 
 In this second function, you can see the formula of the model.
 
