@@ -168,13 +168,13 @@ Then, we chose to take 75% for the learning part and 25% for the test part with 
 
 Let's take a look at some new functions for the print and the summary :
 
-    print.fit(LogisticRegression)
+    print(LogisticRegression)
     
 <img width="817" alt="Capture d’écran 2021-11-28 à 16 28 45" src="https://user-images.githubusercontent.com/73121667/143774599-5c701631-ae21-435c-831c-2602b2bc4443.png">
 
 In this first function, you have access to the coefficients obtained thanks to the fit function. But more important, you have the positive modality which is take by the function. Here, it's the modality "malignant" which is the positive modality but sometimes, according to the partition of the dataset, it can be the other modality which is condider as the positive modality. So, take care about this information in the print.fit function because the result depends on it.
 
-    summary.fit(LogisticRegression)
+    summary(LogisticRegression)
   
 <img width="724" alt="Capture d’écran 2021-11-28 à 16 29 03" src="https://user-images.githubusercontent.com/73121667/143774603-3175a296-7e76-4705-aa6b-7f1df56a9e7d.png">
 
