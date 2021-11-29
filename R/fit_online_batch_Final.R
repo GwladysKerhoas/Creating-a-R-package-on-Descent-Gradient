@@ -144,19 +144,19 @@ fit <- function(formula, data, mode, batch_size, ncores=0,coef,max_iter=100,lear
       data = data[rows,] # Utiliser ces indices pour reorganiser le dataframe
       n=nrow(data)
 
-      for (i in 1:n){
-        # Get the x and y batch
-        x_batch = matrix(data[i,2:ncol(data)], nrow=1, ncol=ncol(data)-1)
-        y_batch = matrix(data[i,1])
+      
+      # Get the x and y batch
+      x_batch = matrix(data[i,2:ncol(data)], nrow=1, ncol=ncol(data)-1)
+      y_batch = matrix(data[i,1])
 
-        # Loss function
-        c = cout(x_batch,y_batch,coef)
-        loss_history = c(loss_history,c)
+      # Loss function
+      c = cout(x_batch,y_batch,coef)
+      loss_history = c(loss_history,c)
 
-        # Gradient function
-        z = gradient(x_batch, y_batch, coef)
-        new_coef = coef - learningrate*z
-      }
+      # Gradient function
+      z = gradient(x_batch, y_batch, coef)
+      new_coef = coef - learningrate*z
+      
 
       # Verification
       if (sum(abs(new_coef-coef)) < tol){
