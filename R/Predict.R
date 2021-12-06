@@ -17,7 +17,7 @@ predict = function(objet, newdata ,type){
   data = newdata
   coef = objet$coefficients
   index = objet$index
-  test = index != colnames(data[,1:(ncol(data))])
+  test = index != colnames(data[,2:(ncol(data))])
   if(FALSE %in% test){
     stop("Jeu de donnees incorrect")
   }
